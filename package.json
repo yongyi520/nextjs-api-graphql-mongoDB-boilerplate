@@ -4,18 +4,24 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "export": "next export"
   },
   "devDependencies": {
     "@prefresh/next": "^0.3.0",
     "react-refresh": "^0.8.3"
   },
   "dependencies": {
+    "apollo-server-micro": "^2.15.0",
+    "gray-matter": "^4.0.2",
+    "marked": "^1.1.0",
+    "mongoose": "^5.9.20",
     "next": "^9.4.0",
     "preact": "^10.4.4",
     "preact-render-to-string": "^5.1.9",
     "react": "github:preact-compat/react#1.0.0",
     "react-dom": "github:preact-compat/react-dom#1.0.0",
-    "react-ssr-prepass": "npm:preact-ssr-prepass@^1.0.1"
+    "react-ssr-prepass": "npm:preact-ssr-prepass@^1.0.1",
+    "swr": "^0.2.3"
   }
 }
