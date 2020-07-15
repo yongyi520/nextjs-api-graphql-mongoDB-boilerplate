@@ -20,9 +20,12 @@ const blogSchema = new Schema({
   userId: {
     type: Schema.Types.ObjectId,
     ref: 'User'
+  },
+  slug: {
+    type: String,
+    required: true
   }
 });
 
-const Blog = mongoose.model("Blog", blogSchema);
+export const Blog = mongoose.models.Blog || mongoose.model("Blog", blogSchema);;
 
-export default Blog;

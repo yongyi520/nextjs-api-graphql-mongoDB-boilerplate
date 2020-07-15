@@ -3,6 +3,8 @@ import { gql } from 'apollo-server-micro'
 export default gql`
   extend type Query {
     allBlogs: [Blog]
+    blog(id: String!): Blog
+    blogBySlug(slug: String!): Blog
   }
   extend type Mutation {
     newBlog(input: BlogInput!): Blog
@@ -10,7 +12,8 @@ export default gql`
     deleteBlog(id: String!): Boolean 
   }
   type Blog {
-    id: ID!
+    id: ID
+    slug: String
     userId: String!
     title: String!
     description: String!
@@ -18,11 +21,12 @@ export default gql`
     tags: [Tag]
   }
   input BlogInput {
-    id: ID!
-    userId: String!
-    title: String!
-    description: String!
-    content: String!
+    id: ID
+    slug: String
+    userId: String
+    title: String
+    description: String
+    content: String
     tags: [TagInput] 
   }
 `

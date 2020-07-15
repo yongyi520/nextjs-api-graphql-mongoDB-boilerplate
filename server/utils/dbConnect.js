@@ -16,6 +16,7 @@ async function dbConnect() {
     useFindAndModify: false,
   })
 
+  console.log('db.connections[0].readyState', db.connections[0].readyState)
   connection.isConnected = db.connections[0].readyState
 }
 

@@ -12,12 +12,12 @@ export default gql`
   }
 
   type Tag {
-    id: ID!
+    id: ID
     name: String!
   }
 
   input TagInput {
-    id: ID!
+    id: ID
     name: String! 
   }
 `

@@ -8,13 +8,19 @@
     "export": "next export"
   },
   "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^2.3.0",
     "@prefresh/next": "^0.3.0",
-    "react-refresh": "^0.8.3"
+    "autoprefixer": "^9.8.5",
+    "react-refresh": "^0.8.3",
+    "tailwindcss": "^1.4.6"
   },
   "dependencies": {
     "apollo-server-micro": "^2.15.0",
     "gray-matter": "^4.0.2",
+    "lodash": "^4.17.15",
     "marked": "^1.1.0",
+    "micro": "^9.3.4",
+    "micro-cors": "^0.1.1",
     "mongoose": "^5.9.20",
     "next": "^9.4.0",
     "preact": "^10.4.4",

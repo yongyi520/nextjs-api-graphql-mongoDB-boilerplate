@@ -7,6 +7,4 @@ const tagSchema = new Schema({
   }
 });
 
-const Tag = mongoose.model("Tag", tagSchema);
-
-export default Tag;
+export const Tag = mongoose.models.Tag || mongoose.model("Tag", tagSchema);;

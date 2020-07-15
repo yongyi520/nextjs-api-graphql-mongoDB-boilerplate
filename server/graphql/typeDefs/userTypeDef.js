@@ -11,7 +11,7 @@ export default gql`
   }
 
   type User {
-    id: ID!
+    id: ID
     firstName: String!
     lastName: String!
     email: String!
@@ -19,7 +19,7 @@ export default gql`
   }
 
   input UserInput {
-    id: ID!
+    id: ID
     firstName: String!
     lastName: String!
     email: String!
