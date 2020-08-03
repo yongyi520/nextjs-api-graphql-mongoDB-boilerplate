@@ -5,6 +5,11 @@ const blogSchema = new Schema({
     type: String,
     required: true
   },
+  mainImage: {
+    type: String,
+    required: true,
+    default: ""
+  },
   description: {
     type: String,
     required: true

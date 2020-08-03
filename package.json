@@ -16,6 +16,8 @@
   },
   "dependencies": {
     "apollo-server-micro": "^2.15.0",
+    "aws-sdk": "^2.722.0",
+    "formidable": "^1.2.2",
     "gray-matter": "^4.0.2",
     "lodash": "^4.17.15",
     "marked": "^1.1.0",
@@ -28,6 +30,7 @@
     "react": "github:preact-compat/react#1.0.0",
     "react-dom": "github:preact-compat/react-dom#1.0.0",
     "react-ssr-prepass": "npm:preact-ssr-prepass@^1.0.1",
-    "swr": "^0.2.3"
+    "swr": "^0.2.3",
+    "uuid": "^8.3.0"
   }
 }

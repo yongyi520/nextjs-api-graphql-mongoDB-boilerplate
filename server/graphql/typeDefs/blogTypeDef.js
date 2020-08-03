@@ -16,6 +16,7 @@ export default gql`
     slug: String
     userId: String!
     title: String!
+    mainImage: String
     description: String!
     content: String!
     tags: [Tag]
@@ -25,6 +26,7 @@ export default gql`
     slug: String
     userId: String
     title: String
+    mainImage: String
     description: String
     content: String
     tags: [TagInput] 

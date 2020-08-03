@@ -14,8 +14,8 @@ export const config = {
 
 const handler = apolloServer.createHandler({ path: "/api/graphql" });
 
-export default cors(handler)
-// export default cors((req, res) => req.method === 'OPTIONS' ? res.end() : handler(req, res))
+// export default cors(handler)
+export default cors((req, res) => req.method === 'OPTIONS' ? res.end() : handler(req, res))
 // export default cors((req, res) => {
 //   if (req.method === 'OPTIONS') {
 //     return send(res, 200, 'ok!');

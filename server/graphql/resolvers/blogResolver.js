@@ -32,11 +32,15 @@ export default {
     updateBlog: async (parentValue, { input }, context, info) => {
       await dbConnect();
       const { id } = input;
+      // console.log('input', input)
       const updateBlogInput = omit(input, "id");
       console.log('update blog input', updateBlogInput)
+      // console.log('id', id)
+      // console.log('finding blog', await Blog.findOne({_id: id}))
       const response = await Blog.updateOne({ _id: id}, {$set: updateBlogInput });
       console.log("update Blog response", response.n === 1);
       return await Blog.findOne({ _id: id });
+      // return null
     },
     deleteBlog: async (parentValue, { id }, context, info) => {
       await dbConnect();
