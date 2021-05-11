@@ -19,7 +19,7 @@
     "aws-sdk": "^2.722.0",
     "formidable": "^1.2.2",
     "gray-matter": "^4.0.2",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.21",
     "marked": "^1.1.0",
     "micro": "^9.3.4",
     "micro-cors": "^0.1.1",
